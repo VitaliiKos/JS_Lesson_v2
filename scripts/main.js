@@ -67,4 +67,4 @@ let personName = prompt('Insert your name:', 'Leanne');
 let personLastName = prompt('Insert your lastName:', 'Graham');
 let personYear = prompt('How old are you:', '18');
 
-console.log(`Hello! My name ${personName} ${personLastName}.I'm ${personYear}.`)
+console.log(`Hello! My name is ${personName} ${personLastName}.I'm ${personYear}.`)
