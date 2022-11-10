@@ -1,0 +1,19 @@
+.users-box{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.user-block{
+    width: 45%;
+    border: 2px solid green;
+    box-sizing: border-box;
+    padding: 5px 0 0 15px;
+    border-radius: 15px;
+    background: #c4dcc4;
+}
+.address-block p:first-letter{
+    text-transform: capitalize;
+}

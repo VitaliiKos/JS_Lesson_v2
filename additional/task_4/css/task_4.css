@@ -1,0 +1,23 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+    justify-content: space-around;
+}
+.post-card{
+    width: 18%;
+    border: 2px solid #000d64;
+    border-radius: 15px;
+    padding: 5px 5px;
+    background: rgba(154, 238, 113, 0.16);
+}
+.post-card:hover {
+    /*background-color: ;*/
+}
+.post-card p{
+    text-align: justify;
+}
+.post-card h3{
+    color: #000080FF;
+}

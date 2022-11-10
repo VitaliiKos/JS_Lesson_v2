@@ -1,0 +1,83 @@
+h1 {
+    margin: 5px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: "Roboto Light", cursive;
+}
+
+li {
+    list-style-type: none;
+}
+
+.product-title:first-letter {
+    text-transform: capitalize;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    background-color: silver;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.product_card {
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 5px solid greenyellow;
+    border-radius: 15px;
+    padding: 10px;
+    background: #f6f4b7;
+    align-content: space-between;
+}
+
+.product_image {
+    width: 45%;
+}
+
+.product_image img {
+    width: 100%;
+}
+
+.product-title {
+    width: 100%;
+
+}
+
+.product_card {
+    flex-wrap: nowrap;
+    align-items: flex-start
+}
+
+.product_info {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.person {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.statusTrue, .statusFalse, .age {
+    border: 2px solid red;
+    width: 25%;
+    padding: 5px 15px;
+    text-align: center;
+}
