@@ -4,7 +4,7 @@ function area_rectangle(a, b) {
 }
 
 console.log(`Task 1: ${area_rectangle(5, 9)}`);
-console.log('----------');
+console.log('--------------------');
 
 // 2. Створити функцію яка обчислює та повертає площу кола з радіусом r
 function area_circle(r) {
@@ -13,7 +13,7 @@ function area_circle(r) {
 }
 
 console.log(`Task 2: ${area_circle(5)}`);
-console.log('----------');
+console.log('--------------------');
 
 // 3. Створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 function area_cylinder(r, h) {
@@ -27,7 +27,7 @@ function area_cylinder(r, h) {
 }
 
 console.log(`Task 3: ${area_cylinder(5, 8)}`);
-console.log('----------');
+console.log('--------------------');
 
 // 4. Створити функцію яка приймає масив та виводить кожен його елемент
 function arr(list) {
@@ -38,7 +38,7 @@ function arr(list) {
 }
 
 arr([23, 54, true, false, 'qwerty']);
-console.log('----------');
+console.log('--------------------');
 
 // 5. Створити функцію яка створює параграф з текстом. Текст задати через аргумент
 function paragraph(p) {
@@ -50,7 +50,7 @@ function paragraph(p) {
 }
 
 paragraph('Leanne Graham');
-document.write(`<p>********************</p>`);
+document.write(`<p>--------------------------------</p>`);
 
 // 6. Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
@@ -64,7 +64,7 @@ let ul_with_li = (text) => {
 }
 
 ul_with_li('Some text');
-document.write(`<p>********************</p>`);
+document.write(`<p>--------------------------------</p>`);
 
 // 7. Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
@@ -79,7 +79,7 @@ let ul_li_cycle = (text, counter) => {
 }
 
 ul_li_cycle('Some text', 7);
-document.write(`<p>********************</p>`);
+document.write(`<p>--------------------------------</p>`);
 
 // 8. Створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 let ul_li_array = (arr) => {
@@ -92,7 +92,7 @@ let ul_li_array = (arr) => {
 }
 
 ul_li_array([12, 'string', true, 'false', -33]);
-document.write(`<p>*******************</p>`);
+document.write(`<p>--------------------------------</p>`);
 
 // 9. Створити функцію яка приймає масив об'єктів з наступними полями id,name,age ,
 // та виводить їх в документ.Для кожного об'єкту окремий блок.
@@ -158,12 +158,11 @@ let block_user = (arr) => {
         document.write(`<h4>Name: ${user.name}</h4>`);
         document.write(`<h4>Age: ${user.age}</h4>`);
         document.write(`</div>`);
-        document.write(`<p>----------------</p>`);
+        document.write(`<p>--------------------------------</p>`);
     }
 }
 
 block_user(users);
-document.write(`<p>********************</p>`);
 
 // 10. Створити функцію яка повертає найменьше число з масиву.
 
@@ -182,7 +181,7 @@ let min_arr = (arr) => {
 
 let example_arr = [5, 7, 543, 1, 9, 4, 76, -98, -45, 56]
 console.log(min_arr(example_arr));
-console.log('----------');
+console.log('--------------------');
 
 
 // 11. Створити функцію яка приймає масив чисел,
@@ -202,4 +201,4 @@ let sum_arr = (arr) => {
 
 example_arr = [5, 7, 543, 1, 9, 87, -876, -98, -45, 56]
 console.log(sum_arr(example_arr));
-console.log('----------');
+console.log('--------------------');
