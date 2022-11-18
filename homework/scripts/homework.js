@@ -55,12 +55,12 @@ document.write(`<p>--------------------------------</p>`);
 // 6. Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
 let ul_with_li = (text) => {
-    document.write(`<ul>`);
-    document.write(`<h4>Task 6</h4>`);
-    document.write(`<li>${text}</li>`);
-    document.write(`<li>${text}</li>`);
-    document.write(`<li>${text}</li>`);
-    document.write(`</ul>`);
+    document.write(`<ul>
+        <h4>Task 6</h4>
+        <li>${text}</li>
+        <li>${text}</li>
+        <li>${text}</li>
+    </ul>`);
 }
 
 ul_with_li('Some text');
@@ -84,10 +84,10 @@ document.write(`<p>--------------------------------</p>`);
 // 8. Створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 let ul_li_array = (arr) => {
     document.write(`<ol>`);
-    document.write(`<h4>Task 8</h4>`);
-    for (let i = 0; i < arr.length; i++) {
-        document.write(`<li>${arr[i]}</li>`);
-    }
+        document.write(`<h4>Task 8</h4>`);
+        for (let i = 0; i < arr.length; i++) {
+            document.write(`<li>${arr[i]}</li>`);
+        }
     document.write(`</ol>`);
 }
 
@@ -153,11 +153,11 @@ let users = [
 let block_user = (arr) => {
     document.write(`<h3>Task 9</h3>`);
     for (const user of arr) {
-        document.write(`<div>`);
-        document.write(`<h4>Id: ${user.id}</h4>`);
-        document.write(`<h4>Name: ${user.name}</h4>`);
-        document.write(`<h4>Age: ${user.age}</h4>`);
-        document.write(`</div>`);
+        document.write(`<div>
+            <h4>Id: ${user.id}</h4>
+            <h4>Name: ${user.name}</h4>
+            <h4>Age: ${user.age}</h4>
+        </div>`);
         document.write(`<p>--------------------------------</p>`);
     }
 }
@@ -188,7 +188,7 @@ console.log('--------------------');
 // сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 let sum_arr = (arr) => {
     console.log('Task 11: ');
-    let sum_value =0;
+    let sum_value = 0;
     for (const item of arr) {
         if (typeof item !== 'number') {
             return 'Wrong data!';
