@@ -137,6 +137,8 @@ for (const suit of suits) {
         deck_of_cards.push(card);
     }
 }
+deck_of_cards.push({cardSuit:'joker', value: 'Joker', color:'red'})
+deck_of_cards.push({cardSuit:'joker', value: 'Joker', color:'black'})
 console.log('Task_9:');
 console.log(deck_of_cards);
 console.log('----------');
