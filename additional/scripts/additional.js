@@ -7,7 +7,7 @@ let cutString = (str, n) => {
     let str_index = 0;
 
     while (str_index <= str.length) {
-        value.push(str.substring(str_index, str_index+n));
+        value.push(str.substring(str_index, str_index + n));
         str_index += n;
     }
     return value.join(' ');
@@ -37,7 +37,7 @@ document.write(`
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
 
 str = "HTML JavaScript PHP";
-let insert_dash = (str) => str.toUpperCase().replaceAll(' ',' - ',);
+let insert_dash = (str) => str.toUpperCase().replaceAll(' ', ' - ',);
 
 document.writeln(`
     <h3>Additional 3:</h3> 
@@ -57,7 +57,7 @@ document.writeln(`
     
 `);
 // 5. Дано список імен.
-let n1 = 'Harry..Potter';
+let n1 = '!@#$%Harry..Pot555ter';
 let n2 = 'Ron---Whisley';
 let n3 = 'Hermione__Granger';
 //     Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
@@ -65,26 +65,24 @@ let n3 = 'Hermione__Granger';
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
 
-
 let validName = (strName) => {
     let validName = '';
-    for (const letter of strName) {
-        if (letter.toLowerCase().charCodeAt(0) >= 97 && letter.toLowerCase().charCodeAt(0) <= 122) {
-            validName += letter;
-        } else {
-            if (validName[validName.length - 1] !== ' ') {
-                validName += ' ';
-            }
+    for (let i = 0; i < strName.length; i++) {
+        if (strName[i].toLowerCase().charCodeAt(0) >= 97 && strName.toLowerCase().charCodeAt(0) <= 122) {
+            validName += strName[i];
+        } else if (strName[i + 1].charCodeAt(0) >= 65 && strName[i + 1].charCodeAt(0) <= 90) {
+            validName += ' ';
         }
     }
-    return validName;
+    return validName.trim();
 }
+
 document.write(`
-<h3>Additional 5:</h3> 
-<h4>${n1} - ${validName(n1)}</h4>
-<h4>${n2} - ${validName(n2)}</h4>
-<h4>${n3} - ${validName(n3)}</h4>
-<h4> ********** </h4>
+    <h3>Additional 5:</h3> 
+    <h4>${n1} - ${validName(n1)}</h4>
+    <h4>${n2} - ${validName(n2)}</h4>
+    <h4>${n3} - ${validName(n3)}</h4>
+    <h4> ********** </h4>
 `);
 
 // 6. створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
@@ -119,7 +117,7 @@ console.log('**********');
 let text = 'Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.';
 let capitalize = (str) => {
     let text_array = [];
-    str.split(' ').forEach((value)=> text_array.push(value[0].toUpperCase()+value.slice(1)))
+    str.split(' ').forEach((value) => text_array.push(value[0].toUpperCase() + value.slice(1)))
     return text_array.join(' ');
 };
 console.log('Additional 9:');
@@ -337,7 +335,7 @@ let books_array = [
     }
 ]
 console.log('Additional 14:')
-console.log( books_array)
+console.log(books_array)
 
 // 14-1. знайти наібльшу книжку.
 console.log('Additional 14-1:')
@@ -363,13 +361,13 @@ console.log('**********')
 
 // 14-4. знайти книжку/ки які писали 2 автори
 console.log('Additional 14-4:')
-let two_authors = (books)=>books.filter(value => value.authors.length === 2);
+let two_authors = (books) => books.filter(value => value.authors.length === 2);
 
 console.log(two_authors(books_array))
 console.log('**********')
 // 14-5. знайти книжку/ки які писав 1 автор
 console.log('Additional 14-5:')
-let one_author = (books)=>books.filter(value => value.authors.length === 1);
+let one_author = (books) => books.filter(value => value.authors.length === 1);
 
 console.log(one_author(books_array))
 console.log('**********')
