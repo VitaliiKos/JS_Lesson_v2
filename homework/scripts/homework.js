@@ -115,12 +115,12 @@ function Car(model, manufacturer, year, max_speed, engine) {
     }
     this.addDriver = function (driver) {
         this.driver = driver;
-        return this.driver = driver;
+        return this.driver;
     }
 
 }
 
-let car1 = new Car('bmw', 'germany', 2010, 250, 'Diesel 3.0')
+let car1 = new Car('bmw', 'Germany', 2010, 250, 'Diesel 2.0')
 
 console.log('Homework 6:');
 console.log(car1.drive());
@@ -149,7 +149,7 @@ class CarCreate {
         this.engine = engine;
     }
     drive (km = this.max_speed) {
-        console.log(`їдемо зі швидкістю ${km} на годину`);
+        return `їдемо зі швидкістю ${km} на годину`;
     }
 
     info () {
@@ -175,11 +175,11 @@ class CarCreate {
     }
 
 }
-let car2 = new CarCreate('audi', 'germany', 2015, 280, 'Diesel 2.5');
+let car2 = new CarCreate('Volvo', 'Swedish', 2015, 280, 'Diesel 2.0');
 let driver2 = {name: 'Clementina', surname: 'DuBuque', email: 'Rey.Padberg@karina.biz', phone: '1-024-648-3804'};
 
 console.log('Homework 7:');
-car2.drive();
+console.log(car2.drive());
 console.log(car2.info());
 car2.increaseMaxSpeed(40);
 car2.changeYear('2018');
@@ -230,6 +230,8 @@ for (const cinderella of cinderellas) {
     }
 }
 console.log('***************');
+
+
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 let prince2 = new Prince('Petya', 27, 39);
 let lucky_cinderella = cinderellas.find(value => value.size === prince2.shoe_size)
