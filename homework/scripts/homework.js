@@ -48,25 +48,26 @@ block_simpson_title.innerText = 'Task 1';
 block_simpsons.appendChild(block_simpson_title);
 document.body.appendChild(block_simpsons);
 
-for (const character in simpsons) {
+for (const character of simpsons) {
+
     let member = document.createElement('div');
     member.className = 'member';
 
     let member_name = document.createElement('h3');
-    member_name.innerText = `Name: ${simpsons[character]['name']}`;
+    member_name.innerText = `Name: ${character['name']}`;
 
     let member_surname = document.createElement('h3');
-    member_surname.innerText = `Surname: ${simpsons[character]['surname']}`;
+    member_surname.innerText = `Surname: ${character['surname']}`;
 
     let member_age = document.createElement('h3');
-    member_age.innerText = `Age: ${simpsons[character]['age']}`;
+    member_age.innerText = `Age: ${character['age']}`;
 
     let member_info = document.createElement('p');
-    member_info.innerText = simpsons[character]['info'];
+    member_info.innerText = character['info'];
 
     let member_photo = document.createElement('img');
-    member_photo.setAttribute('src', simpsons[character]['photo']);
-    member_photo.setAttribute('alt', simpsons[character]['name']);
+    member_photo.setAttribute('src', character['photo']);
+    member_photo.setAttribute('alt', character['name']);
 
     member.append(member_name, member_surname, member_age, member_photo, member_info);
     block_simpsons.appendChild(member);
