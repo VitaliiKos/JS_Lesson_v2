@@ -1,0 +1,21 @@
+.block_users{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #54b3d6;
+    background-color: #deeee5;
+    box-sizing: border-box;
+    padding: 15px 5px;
+}
+.block_user{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 2px solid #002bff;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    width: 18%;
+    background-color: #d5d5d5;
+color: #0674c2;
+}

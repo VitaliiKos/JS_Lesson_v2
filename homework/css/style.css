@@ -1,0 +1,177 @@
+/*--------------- Task 1 -------------------*/
+.block_simpsons, .member {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.member {
+    align-items: center;
+    border: 2px solid silver;
+    margin: 5px;
+}
+
+.member img {
+    width: 20%;
+}
+
+.member h3 {
+    margin: 5px;
+}
+
+
+/*--------------- Task 2 -------------------*/
+.modules {
+    border: 2px solid #0d1aaa;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.modules li {
+    list-style: none;
+    background-color: #d3f1f1;
+    margin: 2px;
+    padding: 1px;
+}
+
+.modules ul {
+    padding: 2px;
+    margin: 2px;
+}
+
+.modulesBlock {
+    background-color: snow;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7px;
+
+}
+
+.modulesBlock h2 {
+    width: 100%;
+}
+
+.monthDuration {
+    width: 39%;
+}
+
+.hourDuration {
+    width: 52%;
+}
+
+.title {
+    width: 100%;
+}
+
+.blockItem, .title, .hourDuration, .monthDuration {
+    border: 2px solid #002bff;
+    margin: 2px;
+    padding: 2px;
+}
+
+.blockItem {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    background-color: cornsilk;
+}
+
+/*--------------- Task 3 -------------------*/
+.wrap {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 10px 20px;
+    border-radius: 15px;
+}
+
+.collapse {
+    color: gold;
+}
+
+.alpha {
+    border: 3px solid #0d1aaa;
+}
+
+.beta {
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+}
+
+/*--------------- Task 4 -------------------*/
+.link_task_4 {
+    font-size: 26px;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 255px 0 0 0 #54b3d6;
+    color: white;
+}
+
+/*--------------- Task 5 -------------------*/
+.subject_block {
+    border: 2px solid #00ffd5;
+    margin: 5px;
+}
+
+/*--------------- Task 6 -------------------*/
+.item h1 {
+    font-size: 20px;
+}
+
+/*--------------- Task 7 -------------------*/
+.text_hidden {
+    visibility: hidden;
+}
+
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/*--------------- Task 9 -------------------*/
+.form_result{
+    /*border: 2px solid #54b3d6;*/
+    box-sizing: border-box;
+    padding: 5px;
+}
+.row_block{
+    display: flex;
+    justify-content: space-between;
+}
+.elem{
+    border: 2px solid #54b3d6;
+    box-sizing: border-box;
+    padding: 2px 3px;
+    margin: 2px;
+}
