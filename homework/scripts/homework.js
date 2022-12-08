@@ -230,7 +230,7 @@ document.body.appendChild(document.createElement('hr'));
 // котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
 let link_task_4 = document.createElement("a");
-link_task_4.innerText = 'Push to select Task 4';
+link_task_4.innerText = 'Press to select Task 4';
 link_task_4.className = 'link_task_4';
 link_task_4.setAttribute('href', 'template1.html')
 

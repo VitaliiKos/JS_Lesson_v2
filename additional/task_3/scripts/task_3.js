@@ -198,7 +198,7 @@ document.body.appendChild(document.createElement('hr'));
 //     Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 
 let link_task_2 = document.createElement("a");
-link_task_2.innerText = 'Push to select Task 2';
+link_task_2.innerText = 'Press to select Task 2';
 link_task_2.className = 'link_task_2';
 link_task_2.setAttribute('href', 'rules.html')
 

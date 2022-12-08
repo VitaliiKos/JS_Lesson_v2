@@ -19,3 +19,23 @@
     background-color: #d5d5d5;
 color: #0674c2;
 }
+
+.ulElement{
+    text-align: left;
+}
+.link_task_2 {
+    font-size: 26px;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .45rem;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 255px 0 0 0 #54b3d6;
+    color: white;
+}
