@@ -205,6 +205,7 @@ document.body.appendChild(document.createElement('hr'));
 // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
+
 let task_3 = document.createElement("div");
 task_3.innerText = 'Task 3';
 task_3.classList.add('wrap');
@@ -230,6 +231,7 @@ document.body.appendChild(document.createElement('hr'));
 // Взяти файл template1.html та додати в нього скріпт
 // котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
+
 let link_task_4 = document.createElement("a");
 link_task_4.innerText = 'Press to select Task 4';
 link_task_4.className = 'link_task_4';

@@ -1,0 +1,280 @@
+#form_2 input {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+/*-------------------------Task-3-------------------------*/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    top: -535px;
+}
+
+.menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: #FFEFBA;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    z-index: 4;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu li {
+    list-style-type: none;
+    margin: 10px;
+    font-size: 24px;
+}
+
+/*-------------------------Task-4-------------------------*/
+.comments_arr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.block_comment {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid #0f9c73;
+}
+
+.comment_content {
+    width: 80%;
+}
+
+.block_comment h3 {
+    margin: 3px;
+}
+
+.button_block {
+    width: 18%;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.comment_btn span {
+    width: 20px;
+}
+
+.comment_btn .active span:nth-of-type(1) {
+    display: none;
+}
+
+.comment_btn .active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.comment_btn .active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.comment_body_block.active {
+    display: none;
+}
+
+.comment_btn {
+    top: -10px;
+    z-index: 3;
+}
+
+/*-------------------------Task-5-------------------------*/
+
+/*-------------------------Task-6-------------------------*/
+.result_info {
+    border: 2px solid #0f9c73;
+}
+
+/*-------------------------Task-7-------------------------*/
+.popup {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    right: 50%;
+    width: 80%;
+    z-index: 6;
+}
+
+.popup .popupText {
+    align-items: center;
+    visibility: hidden;
+    width: 100%;
+    background-color: #7d8b7c;
+    color: #5ce20e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+}
+
+.popup .show {
+    visibility: visible;
+}
+
+.filterResult {
+    width: 100%;
+    border: 2px solid #002bff;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    text-align: start;
+}
+
+#filtered_users {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*-------------------------Task-10-------------------------*/
+
+.items {
+    position: relative;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0 0 105px -35px rgba(0, 0, 0, 0.75);
+}
+
+.item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-125%, -50%);
+}
+
+.item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(25%, -50%);
+}
+
+.items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    z-index: 100;
+}
+
+.button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
+    opacity: 1;
+}
+
+.button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+    float: left;
+}
+
+.button-container .button:nth-child(2) {
+    float: right;
+}

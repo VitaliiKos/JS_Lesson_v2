@@ -1,4 +1,4 @@
-// 2. є сторінка rules.html. Контентом сторінки є заголовки та параграфи.
+// 2. є сторінка task_4.html. Контентом сторінки є заголовки та параграфи.
 // Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
 //     створити скріпт, котрий зчитує всі заголовки,
 //     та робить в блоці з id=content з них список(ul>li),
@@ -18,7 +18,7 @@ let  h2Arr = document.getElementsByTagName('h2');
 for (const h2ArrElement of h2Arr) {
     let li = document.createElement('li');
     li.classList.add('liElement');
-    li.innerHTML = `<h4>${h2ArrElement.innerText}</h4>`
+    li.innerHTML = `<h4>${h2ArrElement.innerText}</h4>`;
 
     ul.appendChild(li);
 }

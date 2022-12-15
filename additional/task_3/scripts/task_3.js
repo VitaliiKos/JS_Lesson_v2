@@ -58,20 +58,26 @@ let users = [
 
 
 // 1.1 З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+let AdditionalTask_1_1_title = document.createElement('h2');
+AdditionalTask_1_1_title.innerText = 'Task 1-1: "Результат виводиться в консоль"';
+AdditionalTask_1_1_title.style.background = 'yellowgreen';
+document.body.appendChild(AdditionalTask_1_1_title);
+
 let new_arr = []
 for (const user of users) {
-    new_arr.push(user.address)
+    new_arr.push(user.address);
 }
-console.log(new_arr)
+console.log(new_arr);
 
 // 1.2 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомогою document.createElement.
 //     Всі данні в одному блоці.
 
 let AdditionalTask_1_2_title = document.createElement('h2');
 AdditionalTask_1_2_title.innerText = 'Task 1-2';
+AdditionalTask_1_2_title.style.background = 'yellowgreen';
 document.body.appendChild(AdditionalTask_1_2_title);
 
-let block_users = document.createElement('div')
+let block_users = document.createElement('div');
 block_users.className = 'block_users';
 document.body.appendChild(block_users);
 
@@ -109,9 +115,10 @@ document.body.appendChild(document.createElement('hr'));
 
 let AdditionalTask_1_3_title = document.createElement('h2');
 AdditionalTask_1_3_title.innerText = 'Task 1-3';
+AdditionalTask_1_3_title.style.background = 'yellowgreen';
 document.body.appendChild(AdditionalTask_1_3_title);
 
-let block_users2 = document.createElement('div')
+let block_users2 = document.createElement('div');
 block_users2.className = 'block_users';
 document.body.appendChild(block_users2);
 
@@ -132,13 +139,13 @@ for (const user of users) {
                 address.appendChild(obj);
             }
         } else {
-            let person_block = document.createElement('div')
+            let person_block = document.createElement('div');
 
             let person = document.createElement('h3');
             person.className = userKey;
             person.innerText = `${userKey[0].toUpperCase()+userKey.slice(1)}: ${user[userKey]}`;
 
-            person_block.appendChild(person)
+            person_block.appendChild(person);
             block_user.appendChild(person_block);
         }
     }
@@ -152,9 +159,10 @@ document.body.appendChild(document.createElement('hr'));
 
 let AdditionalTask_1_4_title = document.createElement('h2');
 AdditionalTask_1_4_title.innerText = 'Task 1-4';
+AdditionalTask_1_4_title.style.background = 'yellowgreen';
 document.body.appendChild(AdditionalTask_1_4_title);
 
-let block_users3 = document.createElement('div')
+let block_users3 = document.createElement('div');
 block_users3.className = 'block_users';
 document.body.appendChild(block_users3);
 
@@ -175,13 +183,13 @@ for (const user of users) {
                 address.appendChild(obj);
             }
         } else {
-            let person_block = document.createElement('div')
+            let person_block = document.createElement('div');
 
             let person = document.createElement('h3');
             person.className = userKey;
             person.innerText = `${userKey[0].toUpperCase()+userKey.slice(1)}: ${user[userKey]}`;
 
-            person_block.appendChild(person)
+            person_block.appendChild(person);
             block_user.appendChild(person_block);
         }
     }
@@ -191,18 +199,18 @@ document.body.appendChild(block_users3);
 document.body.appendChild(document.createElement('hr'));
 
 
-// 2. є сторінка rules.html. Контентом сторінки є заголовки та параграфи.
+// 2. є сторінка task_4.html. Контентом сторінки є заголовки та параграфи.
 // Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
 //     створити скріпт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li),
 //     який буде змістом того, що знаходиться на сторінці.
 //     Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 
 let link_task_2 = document.createElement("a");
-link_task_2.innerText = 'Press to select Task 2';
+link_task_2.innerText = `>>>     Press to select Task 2     <<<`;
 link_task_2.className = 'link_task_2';
-link_task_2.setAttribute('href', 'rules.html')
+link_task_2.setAttribute('href', 'task_4.html');
 
-document.body.appendChild(link_task_2)
+document.body.appendChild(link_task_2);
 document.body.appendChild(document.createElement('hr'));
 
 
@@ -245,3 +253,32 @@ let rules = [
     },
 
 ];
+
+let AdditionalTask_3 = document.createElement('h2');
+AdditionalTask_3.style.background = 'yellowgreen';
+AdditionalTask_3.innerText = 'Task 3';
+document.body.appendChild(AdditionalTask_3);
+
+
+let block_wrap = document.createElement('div');
+block_wrap.className = 'wrap';
+
+let counter = 1;
+for (const rule of rules) {
+
+    let block_rule = document.createElement('div');
+    block_rule.classList.add('rules');
+    block_rule.classList.add(`rule${counter}`);
+
+    let rule_title = document.createElement('h2');
+    rule_title.innerText = rule.title;
+
+    let rule_body = document.createElement('p');
+    rule_body.innerText = rule.body;
+
+    block_rule.append(rule_title, rule_body);
+
+    block_wrap.append(block_rule, document.createElement('hr'));
+    counter++;
+}
+document.body.appendChild(block_wrap);
