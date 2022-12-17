@@ -1,0 +1,132 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.users_list{
+    width: 25%;
+}
+#productForm{
+    font-size: 22px;
+}
+#productForm input{
+    width: 40%;
+    font-size: 20px;
+    background-color: #e7e3e3;
+}
+
+.user_item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+ button{
+    box-sizing: border-box;
+    height: 70%;
+    margin: 3px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #48ff00;
+}
+.user_post_list{
+    box-sizing: border-box;
+    margin: 5px;
+    width: 30%;
+}
+.user_item:hover {
+    background-color: #96a1bb;
+}
+.posts_list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #48ff00;
+    background-color: #96a1bb;
+    margin: 3px;
+}
+.posts_list h3{
+    margin: 3px;
+}
+.post_comments_list{
+    width: 43%;
+}
+.comments_list{
+    border: 2px solid #0f9c73;
+    margin: 5px;
+    background-color: #96a1bb;
+    padding: 5px;
+}
+
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.product_cart{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 2px solid;
+    width: 23%;
+    align-items: center;
+    row-gap: 10px;
+    padding: 5px;
+
+    background-color: #dedddd;
+}
+.product_cart h3{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.product_cart img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.delete_btn{
+    box-sizing: border-box;
+    height: inherit;
+    margin: 3px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #48ff00;
+}
+.clear_cart{
+    width: 100%;
+}
+.clear_cart button{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #db9090;
+}
+.clear_cart button{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+    .product_cart {
+        width: 45%;
+    }
+    .product_cart img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .product_cart {
+        width: 100%;
+    }
+    .product_cart img{
+        width: 250px;
+        height: 250px;
+    }
+}

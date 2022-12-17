@@ -6,10 +6,9 @@
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then(users => {
-        console.log(users)
         let users_block = document.createElement('div');
-        users_block.classList.add('users_list')
-        let users_list = document.createElement('ul')
+        users_block.classList.add('users_list');
+        let users_list = document.createElement('ul');
 
         for (const user of users) {
             let user_div = document.createElement('div');
