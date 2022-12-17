@@ -58,10 +58,10 @@ let users = [
 
 
 // 1.1 З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-let AdditionalTask_1_1_title = document.createElement('h2');
-AdditionalTask_1_1_title.innerText = 'Task 1-1: "Результат виводиться в консоль"';
-AdditionalTask_1_1_title.style.background = 'yellowgreen';
-document.body.appendChild(AdditionalTask_1_1_title);
+let additionalTask_1_1_title = document.createElement('h2');
+additionalTask_1_1_title.innerText = 'Task 1-1: "Результат виводиться в консоль"';
+additionalTask_1_1_title.style.background = 'yellowgreen';
+document.body.appendChild(additionalTask_1_1_title);
 
 let new_arr = []
 for (const user of users) {
@@ -72,10 +72,10 @@ console.log(new_arr);
 // 1.2 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомогою document.createElement.
 //     Всі данні в одному блоці.
 
-let AdditionalTask_1_2_title = document.createElement('h2');
-AdditionalTask_1_2_title.innerText = 'Task 1-2';
-AdditionalTask_1_2_title.style.background = 'yellowgreen';
-document.body.appendChild(AdditionalTask_1_2_title);
+let additionalTask_1_2_title = document.createElement('h2');
+additionalTask_1_2_title.innerText = 'Task 1-2';
+additionalTask_1_2_title.style.background = 'yellowgreen';
+document.body.appendChild(additionalTask_1_2_title);
 
 let block_users = document.createElement('div');
 block_users.className = 'block_users';
@@ -113,10 +113,10 @@ document.body.appendChild(document.createElement('hr'));
 // 1.3 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 //      розділивши всі властивості по своїм блокам (div>div*4)
 
-let AdditionalTask_1_3_title = document.createElement('h2');
-AdditionalTask_1_3_title.innerText = 'Task 1-3';
-AdditionalTask_1_3_title.style.background = 'yellowgreen';
-document.body.appendChild(AdditionalTask_1_3_title);
+let additionalTask_1_3_title = document.createElement('h2');
+additionalTask_1_3_title.innerText = 'Task 1-3';
+additionalTask_1_3_title.style.background = 'yellowgreen';
+document.body.appendChild(additionalTask_1_3_title);
 
 let block_users2 = document.createElement('div');
 block_users2.className = 'block_users';
@@ -157,10 +157,10 @@ document.body.appendChild(document.createElement('hr'));
 // 1.4 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 // розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
-let AdditionalTask_1_4_title = document.createElement('h2');
-AdditionalTask_1_4_title.innerText = 'Task 1-4';
-AdditionalTask_1_4_title.style.background = 'yellowgreen';
-document.body.appendChild(AdditionalTask_1_4_title);
+let additionalTask_1_4_title = document.createElement('h2');
+additionalTask_1_4_title.innerText = 'Task 1-4';
+additionalTask_1_4_title.style.background = 'yellowgreen';
+document.body.appendChild(additionalTask_1_4_title);
 
 let block_users3 = document.createElement('div');
 block_users3.className = 'block_users';
@@ -208,7 +208,7 @@ document.body.appendChild(document.createElement('hr'));
 let link_task_2 = document.createElement("a");
 link_task_2.innerText = `>>>     Press to select Task 2     <<<`;
 link_task_2.className = 'link_task_2';
-link_task_2.setAttribute('href', 'task_4.html');
+link_task_2.setAttribute('href', 'rules.html');
 
 document.body.appendChild(link_task_2);
 document.body.appendChild(document.createElement('hr'));
@@ -254,10 +254,10 @@ let rules = [
 
 ];
 
-let AdditionalTask_3 = document.createElement('h2');
-AdditionalTask_3.style.background = 'yellowgreen';
-AdditionalTask_3.innerText = 'Task 3';
-document.body.appendChild(AdditionalTask_3);
+let additionalTask_3 = document.createElement('h2');
+additionalTask_3.style.background = 'yellowgreen';
+additionalTask_3.innerText = 'Task 3';
+document.body.appendChild(additionalTask_3);
 
 
 let block_wrap = document.createElement('div');

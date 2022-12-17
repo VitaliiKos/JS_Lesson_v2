@@ -238,10 +238,10 @@ let usersList = [
 // свої окремі блок.
 let task1 = document.querySelector('#task_1');
 
-let AdditionalTask_1_title = document.createElement('h2');
-AdditionalTask_1_title.innerText = 'Task 1.';
-AdditionalTask_1_title.style.background = 'yellowgreen';
-task1.appendChild(AdditionalTask_1_title);
+let additionalTask_1_title = document.createElement('h2');
+additionalTask_1_title.innerText = 'Task 1.';
+additionalTask_1_title.style.background = 'yellowgreen';
+task1.appendChild(additionalTask_1_title);
 
 
 let users_block = document.createElement('div');
@@ -282,10 +282,10 @@ task1.appendChild(document.createElement('hr'));
 // asd ->tab-> <asd></asd>
 let task2 = document.querySelector('#task_2');
 
-let AdditionalTask_2_title = document.createElement('h2');
-AdditionalTask_2_title.innerText = 'Task 2.';
-AdditionalTask_2_title.style.background = 'yellowgreen';
-task2.appendChild(AdditionalTask_2_title);
+let additionalTask_2_title = document.createElement('h2');
+additionalTask_2_title.innerText = 'Task 2.';
+additionalTask_2_title.style.background = 'yellowgreen';
+task2.appendChild(additionalTask_2_title);
 
 block_input.onkeydown = handle;
 
@@ -313,10 +313,10 @@ task2.appendChild(document.createElement('hr'));
 
 let task3 = document.querySelector('#task_3');
 
-let AdditionalTask_3_title = document.createElement('h2');
-AdditionalTask_3_title.innerText = 'Task 3: Виводиться в консоль';
-AdditionalTask_3_title.style.background = 'yellowgreen';
-task3.appendChild(AdditionalTask_3_title);
+let additionalTask_3_title = document.createElement('h2');
+additionalTask_3_title.innerText = 'Task 3: Виводиться в консоль';
+additionalTask_3_title.style.background = 'yellowgreen';
+task3.appendChild(additionalTask_3_title);
 
 let heading_tag = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 let result = {

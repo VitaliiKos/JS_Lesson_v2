@@ -3,10 +3,10 @@
 
 let task1 = document.querySelector('#task_title');
 
-let AdditionalTask_1_title = document.createElement('h2');
-AdditionalTask_1_title.innerText = 'Task 1: Виводиться в консоль';
-AdditionalTask_1_title.style.background = 'yellowgreen';
-task1.appendChild(AdditionalTask_1_title);
+let additionalTask_1_title = document.createElement('h2');
+additionalTask_1_title.innerText = 'Task 1: Виводиться в консоль';
+additionalTask_1_title.style.background = 'yellowgreen';
+task1.appendChild(additionalTask_1_title);
 
 let class_arr = [];
 
