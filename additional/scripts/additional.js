@@ -132,4 +132,4 @@ let cart_btn = document.querySelector('.productList');
 let cart_link = document.createElement('a');
 cart_link.href = 'list.html';
 cart_link.innerHTML = 'Перейти до списку товарів';
-cart_btn.appendChild(cart_link)
+cart_btn.appendChild(cart_link);
