@@ -1,0 +1,100 @@
+body {
+    height: auto;
+}
+
+h2{
+    font-size: 32px;
+}
+.users_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.users_list ul {
+    text-align: start;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.users_list ul div {
+    margin: 10px;
+}
+
+.users_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 15px 5px;
+}
+
+.user_elem {
+    width: 90%;
+    border: 2px solid #5b8764;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 5px;
+    padding: 5px 5px 5px 10%;
+    background-color: rgba(209, 210, 207, 0.3);
+    font-size: 20px;
+    color: gold;
+}
+
+.user_elem > h3 {
+    margin: 3px;
+}
+
+.user_elem_title > .user_elem {
+    border: 2px solid #5b8764;
+}
+
+.posts {
+    width: 80%;
+}
+
+.posts_list {
+    margin: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(209, 210, 207, 0.3);
+    border: 2px solid #5b8764;
+    font-size: 18px;
+    color: gold;
+}
+
+.posts_list:hover {
+    background-color: #0f9c73;
+}
+
+.post_title_content {
+    width: 80%;
+    text-align: start;
+}
+
+.post_title_content h3 {
+    margin: 5px;
+}
+
+.post_button_block {
+    width: 18%;
+}
+
+.posts button {
+    width: 80%;
+}
+
+.button > a > .button-78 {
+    width: 60%;
+    font-size: 24px;
+}

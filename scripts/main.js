@@ -1,0 +1,63 @@
+// В index.html
+// 1 отримати масив об'єктів з endpoint`а https://jsonplaceholder.typicode.com/users
+// 2 Вивести id,name всіх user в index.html. Окремий блок для кожного user.
+// 3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html,
+// котра має детальну інфорацію про об'єкт на який клікнули
+//
+//
+// На странице user-details.html:
+// 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
+// 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
+// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
+//  6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html,
+//  котра має детальну інфу про поточний пост.
+//
+//     На странице post-details.html:
+// 7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .
+// 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
+//
+// Стилизація проєкта -
+// index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.
+//     user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.
+//     блоки з короткою іфною про post - в ряд по 5 .
+//     post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
+//     Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
+
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then((response) => response.json())
+    .then(users_arr => {
+        localStorage.setItem('users', JSON.stringify(users_arr))
+        let users = JSON.parse(localStorage.getItem('users'));
+
+        let users_block = document.createElement('div');
+        users_block.classList.add('users_list');
+
+        for (const user of users) {
+            let user_div = document.createElement('div');
+            user_div.className = 'user_block';
+            let user_context = document.createElement('div');
+            user_context.className = 'user_context';
+            user_context.innerHTML = `<h3>${user.id}. ${user.name}</h3>`;
+
+
+            let user_button_block = document.createElement('div');
+            user_button_block.className = 'user_button_block';
+
+            let user_detail_link = document.createElement('a');
+            user_detail_link.href = `user_detail.html?id=${user.id}`;
+
+            let user_button = document.createElement('button');
+            user_button.innerText = 'Detail';
+            user_button.className = 'button-78';
+            user_button.onclick = () => {
+                localStorage.setItem('current_user_id', user.id)
+                localStorage.setItem('current_user', JSON.stringify(user));
+            }
+
+            user_detail_link.appendChild(user_button);
+            user_button_block.appendChild(user_detail_link);
+            user_div.append(user_context, user_button_block);
+            users_block.append(user_div);
+        }
+        document.body.append(users_block);
+    });
