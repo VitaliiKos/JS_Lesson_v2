@@ -5,6 +5,11 @@ body {
 h2{
     font-size: 32px;
 }
+.post_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .post_card {
     width: 80%;
     box-sizing: border-box;
@@ -63,7 +68,7 @@ h2{
     margin: 15px 5px;
     background-color: rgba(209, 210, 207, 0.2);
     color: #fff200;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .comment_title {
@@ -93,10 +98,19 @@ h2{
         width: 44%;
         font-size: 18px;
     }
+    .comments_block {
+        justify-content: space-around;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .comments_list {
         width: 95%;
+    }
+}
+@media (max-width: 576px) {
+    .button > a > .button-78 {
+        width: 90%;
     }
 }

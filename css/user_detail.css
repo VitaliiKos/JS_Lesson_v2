@@ -56,21 +56,30 @@ h2{
 .user_elem_title > .user_elem {
     border: 2px solid #5b8764;
 }
+.post_list_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .posts {
-    width: 80%;
+    width: 100%;
 }
 
 .posts_list {
-    margin: 5px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgba(209, 210, 207, 0.3);
     border: 2px solid #5b8764;
     font-size: 18px;
     color: gold;
+    width: 18%;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
 }
 
 .posts_list:hover {
@@ -78,7 +87,7 @@ h2{
 }
 
 .post_title_content {
-    width: 80%;
+    width: 100%;
     text-align: start;
 }
 
@@ -87,14 +96,34 @@ h2{
 }
 
 .post_button_block {
-    width: 18%;
+    width: 100%;
 }
 
 .posts button {
-    width: 80%;
+    width: 90%;
 }
 
 .button > a > .button-78 {
     width: 60%;
     font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .posts_list {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .posts_list {
+        width: 45%;
+    }
+}
+@media (max-width: 576px) {
+    .posts_list {
+        width: 90%;
+    }
+    .button > a > .button-78 {
+        width: 90%;
+    }
 }
