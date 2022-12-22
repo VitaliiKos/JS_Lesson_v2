@@ -1,0 +1,29 @@
+.button-73 {
+    width: 20%;
+    font-weight: 700;
+    font-size: 1rem;
+    appearance: none;
+    border-radius: 40em;
+    border-style: none;
+    background-color: #9f330a;
+    box-shadow: #860dcb 0 -16px 6px inset;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: -.24px;
+    margin-top: 10px;
+    padding: 5px 25px;
+    outline: none;
+    transition: all .15s;
+    color: gold;
+}
+
+.button-73:hover {
+    color: #fffb00;
+    background-color: #29c6ff;
+    box-shadow: #0d1aaa 0 -16px 8px inset;
+    transform: scale(1.125);
+}
+
+.button-73:active {
+    transform: scale(1.025);
+}

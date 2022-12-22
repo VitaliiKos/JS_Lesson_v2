@@ -196,7 +196,8 @@ body {
     padding: 10px;
 }
 
-button::before {
+/*button::before {*/
+#day_btn_block::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(300px + 12px);
@@ -216,11 +217,11 @@ button::before {
     transform: translateY(-6px);
 }
 
-button:hover::before, button:focus::before {
+#day_btn_block:hover::before, #day_btn_block:focus::before {
     opacity: 1;
 }
 
-button::after {
+#day_btn_block::after {
     content: '';
     width: 30px;
     height: 30px;
@@ -234,7 +235,7 @@ button::after {
     animation: ring 1.5s infinite;
 }
 
-button:hover::after, button:focus::after {
+#day_btn_block:hover::after, #day_btn_block:focus::after {
     animation: none;
     display: none;
 }
