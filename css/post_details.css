@@ -58,8 +58,8 @@ h2{
 
 .comments_list {
     margin: 5px;
-    width: 24%;
-    font-size: 18px;
+    width: 19%;
+    font-size: 16px;
     background-color: rgba(209, 210, 207, 0.3);
 }
 
@@ -87,6 +87,9 @@ h2{
     align-items: center;
     margin: 3px;
     width: 78%;
+}
+.comment_title_description {
+font-size: 14px;
 }
 .button > a > .button-78 {
     width: 60%;
