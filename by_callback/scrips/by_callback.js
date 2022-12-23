@@ -18,7 +18,7 @@ function startDay(myVariables, callback) {
 
             } else {
                 myVariables.mood -= 15;
-                wake_up.innerHTML = `<h3>Проспав, треба швидко збиратись нароботу.</h3>`;
+                wake_up.innerHTML = `<h3>Проспав, треба швидко збиратись на роботу.</h3>`;
                 message.innerText = 'Треба бігти на роботу. Не люблю запізнюватись... ';
             }
             step.append(wake_up, message);
