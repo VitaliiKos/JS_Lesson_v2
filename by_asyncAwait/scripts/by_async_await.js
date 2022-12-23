@@ -339,5 +339,5 @@ day_btn.onclick = (event) => {
         day_block.removeChild(day_block.firstChild);
     }
 
-    myWorkDay(myVariables)
+    myWorkDay(myVariables);
 }
