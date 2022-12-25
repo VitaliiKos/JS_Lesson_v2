@@ -2,14 +2,16 @@ body {
     height: auto;
 }
 
-h2{
+h2 {
     font-size: 32px;
 }
-.post_block{
+
+.post_block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .post_card {
     width: 80%;
     box-sizing: border-box;
@@ -88,10 +90,13 @@ h2{
     margin: 3px;
     width: 78%;
 }
+
 .comment_title_description {
-font-size: 14px;
+    font-size: 14px;
+    word-break: break-word;
 }
-.button > a > .button-78 {
+
+.button_back > .button-78 {
     width: 60%;
     font-size: 24px;
 }
@@ -101,6 +106,7 @@ font-size: 14px;
         width: 44%;
         font-size: 18px;
     }
+
     .comments_block {
         justify-content: space-around;
     }
@@ -112,8 +118,9 @@ font-size: 14px;
         width: 95%;
     }
 }
+
 @media (max-width: 576px) {
-    .button > a > .button-78 {
+    .button_back > .button-78 {
         width: 90%;
     }
 }

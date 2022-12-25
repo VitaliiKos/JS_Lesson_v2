@@ -1,3 +1,8 @@
+let button_back = document.querySelector('.button_back>.button-78');
+button_back.onclick = ()=>{
+    location.href = 'user_detail.html';
+}
+
 let current_user_post = JSON.parse(localStorage.getItem('current_user_post'));
 
 let post_block = document.createElement('div');

@@ -43,19 +43,16 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let user_button_block = document.createElement('div');
             user_button_block.className = 'user_button_block';
 
-            let user_detail_link = document.createElement('a');
-            user_detail_link.href = `user_detail.html?id=${user.id}`;
-
             let user_button = document.createElement('button');
             user_button.innerText = 'Detail';
             user_button.className = 'button-78';
             user_button.onclick = () => {
-                localStorage.setItem('current_user_id', user.id)
+                location.href = `user_detail.html?id=${user.id}`;
+                localStorage.setItem('current_user_id', user.id);
                 localStorage.setItem('current_user', JSON.stringify(user));
             }
 
-            user_detail_link.appendChild(user_button);
-            user_button_block.appendChild(user_detail_link);
+            user_button_block.appendChild(user_button);
             user_div.append(user_context, user_button_block);
             users_block.append(user_div);
         }

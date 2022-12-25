@@ -1,3 +1,8 @@
+let button_back = document.querySelector('.button_back>.button-78');
+button_back.onclick = ()=>{
+    location.href = 'index.html';
+}
+
 let current_user_id = JSON.parse(localStorage.getItem('current_user_id'));
 let current_user = JSON.parse(localStorage.getItem('current_user'));
 
@@ -68,18 +73,15 @@ post_button.onclick = (event) => {
                     let post_button_block = document.createElement('div');
                     post_button_block.className = 'post_button_block';
 
-                    let post_detail_link = document.createElement('a');
-                    post_detail_link.href = `post_detail.html?post_id=${post.id}`;
-
                     let post_button = document.createElement('button');
                     post_button.innerText = 'Detail';
                     post_button.className = 'button-7';
                     post_button.onclick = () => {
+                        location.href = `post_detail.html?post_id=${post.id}`;
                         localStorage.setItem('current_user_post', JSON.stringify(post));
                     }
 
-                    post_detail_link.appendChild(post_button);
-                    post_button_block.appendChild(post_detail_link);
+                    post_button_block.appendChild(post_button);
                     posts_list.append(post_title_content, post_button_block);
                 }
             })
